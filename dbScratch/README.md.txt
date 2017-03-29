@@ -1,0 +1,1 @@
+# tu by mal byt navrh databazy
