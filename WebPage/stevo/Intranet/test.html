@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+
+
+
+
+
+
+
+
+</script>
+</head>
+<body>
+
+
+<div class="container " >
+
+   <div class="row row-centered">
+       <div class="col-sm-8 col-sm-offset-2">
+            <ul class="list-group">
+                <li class="list-group-item justify-content-between">
+                    <strong>Dokument</strong>
+                    <span class="badge badge-default badge-pill">Príloha</span>
+                </li>
+
+                <li class="list-group-item justify-content-between">
+                    Cras justo odio
+                    <span class="badge badge-default badge-pill">TU BUDE TEXT</span>
+                </li>
+                <li class="list-group-item justify-content-between">
+                    Dapibus ac facilisis in
+                    <span class="badge badge-default badge-pill">TU BUDE TEXT</span>
+                </li>
+                <li class="list-group-item justify-content-between">
+                    Morbi leo risus
+                    <span class="badge badge-default badge-pill">TU BUDE TEXT</span>
+                </li>
+                <li class="list-group-item justify-content-between">
+                    <h5 class="mb-1 text-center ">
+                        <button type="button" class="btn btn-info btn-sm text-center" data-toggle="modal" data-target="#myModal">Vytvorte nový dokument</button>
+                    </h5>
+
+                </li>
+            </ul>
+       </div>
+   </div>
+
+</div>
+
+<!-- Trigger the modal with a button -->
+
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Vytvorte nový dokument</h4>
+            </div>
+            <div class="modal-body">
+                   <div class="form">
+                       <div class="form-group" >
+                           <div>
+                               <input class="form-control text-center"  id="focusedInput" type="text" placeholder="Zadajte názov dokumentu">
+                           </div>
+
+                       </div>
+
+
+                       <span class="text-center">Vyberte typ súboru</span>
+                       <div id="tab" class="btn-group text-center" data-toggle="buttons">
+                           <a href="#prices" class="btn btn-default active text-center " data-toggle="tab">
+                               <input type="radio">Url</a>
+                           <a href="#features" class="btn btn-default text-center" data-toggle="tab">
+                               <input type="radio">File</a>
+                           <a href="#requests" class="btn btn-default text-center" data-toggle="tab">
+                               <input type="radio">Text</a>
+                            <br><br>
+                       </div>
+
+                       <div class="tab-content ">
+                           <div class="tab-pane active" id="prices">
+                               <div class="form-group">
+                                   <input class="tab-pane active text-center form-control" id="focusedInputDoc" type="text" placeholder="Zadajte url">
+                               </div>
+                           </div>
+                           <div class="tab-pane" id="features">
+                               <div class="form-group">
+                                   <input class="form-control text-center" id="focusedInputDoc2" type="file" placeholder="Nahrajte obsah dokumentu">
+                               </div>
+                           </div>
+
+                           <div class="tab-pane" id="requests">
+                              <div class="form-group">
+                                  <textarea class="form-control test-center" rows="5" id="comment"></textarea>
+                              </div>
+                           </div>
+
+                       </div>
+
+
+
+
+
+                    </div>
+
+            </div>
+        </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
