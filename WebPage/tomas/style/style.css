@@ -1,0 +1,173 @@
+.clear{
+    clear: both;
+}
+
+h2{
+    font: normal normal bold 20px/normal "Lucida Console", Monaco, monospace;
+    text-align: center;
+}
+
+.projects{
+    margin: auto;
+    width: 860px;
+}
+
+.projects th{
+    box-sizing: content-box;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    font: normal normal bold 16px/normal "Lucida Console", Monaco, monospace;
+    color: rgba(90,90,90,1);
+    background: -webkit-repeating-linear-gradient(-90deg, rgba(160,160,160,1) 0, rgba(255,255,255,1) 100%);
+    background: -moz-repeating-linear-gradient(180deg, rgba(160,160,160,1) 0, rgba(255,255,255,1) 100%);
+    background: repeating-linear-gradient(180deg, rgba(160,160,160,1) 0, rgba(255,255,255,1) 100%);
+    background-position: 50% 50%;
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.32) ;
+}
+
+.projects tr:nth-child(odd){
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 5px;
+    min-width: 120px;
+    overflow: hidden;
+    border: none;
+    font: normal normal bold 16px/1 "Lucida Console", Monaco, monospace;
+    color: rgba(71,71,71,1);
+    text-align: center;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    background: rgba(229,229,229,1);
+    -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+    box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+}
+
+.projects tr:nth-child(even){
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 5px;
+    min-width: 120px;
+    overflow: hidden;
+    border: none;
+    font: normal normal bold 16px/1 "Lucida Console", Monaco, monospace;
+    color: rgba(255,255,255,1);
+    text-align: center;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    background: rgba(158,158,158,1);
+    -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+    box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+}
+
+.menu-item{
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 140px;
+    padding: 5px;
+    overflow: hidden;
+    border: none;
+    font: normal normal bold 16px/1 "Lucida Console", Monaco, monospace;
+    color: rgba(89,89,89,1);
+    text-align: center;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    background: rgb(214,214,214);
+    -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+    box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+    -webkit-transition: background-color 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+    -moz-transition: background-color 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+    -o-transition: background-color 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+    transition: background-color 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+}
+
+.menu-item:hover{
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 140px;
+    padding: 5px;
+    overflow: hidden;
+    border: none;
+    font: normal normal bold 16px/1 "Lucida Console", Monaco, monospace;
+    color: rgba(89,89,89,1);
+    text-align: center;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    background: rgba(180,180,180,1);
+    -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+    box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+}
+
+#menu{
+    list-style: none;
+    text-align: center;
+}
+
+.first-level > li{
+    float: left;
+}
+
+.second-level{
+
+    position: absolute;
+    display: none;
+}
+
+.third-level{
+
+    position: absolute;
+    display: none;
+}
+
+.first-level li:hover > ul{
+    display: block;
+}
+
+.second-level li:hover > ul{
+    display: block;
+}
+
+footer{
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+    border: none;
+    font: normal normal bold 16px/1 "Lucida Console", Monaco, monospace;
+    color: rgba(255,255,255,1);
+    text-align: center;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    background: rgba(71,71,71,1);
+    -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+    box-shadow: 0px -3px 7px 0 rgba(0,0,0,0.6) ;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+}
+
+.footer-contacts td{
+    text-align: left;
+    border: none;
+}
+
+.footer-contacts a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-contacts ul{
+    list-style: none;
+}
