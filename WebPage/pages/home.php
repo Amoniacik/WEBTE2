@@ -13,13 +13,6 @@ Licence URI: http://www.os-templates.com/template-terms
     <link rel="stylesheet" href="../layout/styles/layout.css" type="text/css" />
     <script type="text/javascript" src="../layout/scripts/jquery.min.js"></script>
     <script type="text/javascript" src="../scripts/tables.js"></script>
-    <script type="text/javascript">
-        <!--
-        if (screen.width <= 800) {
-            window.location = "http://m.domain.com";
-        }
-        //-->
-    </script>
     <!-- liteAccordion is Homepage Only -->
     <link rel="stylesheet" href="../layout/scripts/liteaccordion-v2.2/css/liteaccordion.css" type="text/css" />
 </head>

@@ -16,9 +16,22 @@ Licence URI: http://www.os-templates.com/template-terms
     <script type="text/javascript" src="scripts/main.js"></script>
     <script type="text/javascript">
         <!--
-        if (screen.width <= 800) {
-            window.location = "http://m.domain.com";
+        $( document ).ready(function() {
+            var isMobile = window.matchMedia("only screen and (max-width: 720px)");
+
+            if (isMobile.matches) {
+            //window.location = "http://m.domain.com";
+//            $("input[type=checkbox]:checked ~ #menu").css("display","block");
+//            $("input[type=checkbox]").css("display","none");
+            $(".first-level,.second-level,.third-level").css({"position":"static","display":"none","padding":"0px"});
+            $("li").css({"margin-bottom":"1px", "width":"100%"});
+            $(".first-level > li,.second-level> li,.third-level > li").css("width","100%");
+            $(".menu-item").css({"width":"100%","box-shadow":"none"});
+            $(".first-level li:hover > ul").css({"position":"relative","display":"block","z-index":"9999","width":"inherit"});
+            $(".second-level li:hover > ul").css({"display":"block","z-index":"9999","position":"relative"});
+            $(".show-menu").css("display", "block");
         }
+    });
         //-->
     </script>
 <!-- liteAccordion is Homepage Only -->
@@ -146,7 +159,7 @@ Licence URI: http://www.os-templates.com/template-terms
           </td>
       </tr>
     </table>
-    <!-- ####################################################################################################### --> 
+    <!-- ####################################################################################################### -->
   </footer>
 </div>
 <!-- ####################################################################################################### -->
@@ -156,8 +169,8 @@ Licence URI: http://www.os-templates.com/template-terms
 <!--    <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>-->
 <!--  </div>-->
 </div>
-<!-- liteAccordion is Homepage Only --> 
-<script type="text/javascript" src="layout/scripts/liteaccordion-v2.2/js/liteaccordion.jquery.min.js"></script> 
+<!-- liteAccordion is Homepage Only -->
+<script type="text/javascript" src="layout/scripts/liteaccordion-v2.2/js/liteaccordion.jquery.min.js"></script>
 <script type="text/javascript">
 $("#featured_slide").liteAccordion({
     theme: "os-tpl",
