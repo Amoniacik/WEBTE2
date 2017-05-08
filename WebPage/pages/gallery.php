@@ -35,7 +35,7 @@ Licence URI: http://www.os-templates.com/template-terms
 
             require "gallery/folder.php";
 
-            $directories = glob("../images" . '/*' , GLOB_ONLYDIR);
+            $directories = glob("gallery/albums" . '/*' , GLOB_ONLYDIR);
             //print_r($directories);
 
             for($i=0; $i<count($directories); $i++){
