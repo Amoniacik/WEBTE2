@@ -22,12 +22,36 @@ Licence URI: http://www.os-templates.com/template-terms
 <div id="top" onload="init()">
     <div class="wrapper row4">
         <h2>Fotogaléria</h2>
-        <a href="../images/feika.jpg" rel="lightbox-cats" title="Pohľad na fei">
-            <img src="../images/feika.jpg" height="100" width="150"/>
-        </a>
-        <a href="../images/math.jpg" rel="lightbox-cats" title="Matika">
-            <img src="../images/math.jpg" height="100" width="150"/>
-        </a>
+        <script type="text/javascript">
+            function show(cls) {
+                if ($("." + cls).css('display') == "block"){
+                    $("." + cls).css("display", "none");
+                }else{
+                    $("." + cls).css("display", "block");
+                }
+            }
+        </script>
+        <?php
+
+            require "gallery/folder.php";
+
+            $directories = glob("../images" . '/*' , GLOB_ONLYDIR);
+            //print_r($directories);
+
+            for($i=0; $i<count($directories); $i++){
+                $a=new Folder($directories[$i]);
+
+                $folder=$a->getFiles();
+
+                $cls= $a->getClass();
+
+                $name=explode("/",$directories[$i]);
+                $name=ucfirst(strtolower($name[count($name)-1]));
+
+                echo "<h3 onclick='show(\"$cls\")'><img src='../layout/styles/images/folder.png'/><br>$name</h3>";
+                echo "$folder<br><br><hr>";
+            }
+        ?>
     </div>
 </div>
 </body>

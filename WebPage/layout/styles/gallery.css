@@ -15,3 +15,8 @@ File: Gallery CSS
 #gallery ul{margin:0; padding:0; list-style:none;}
 #gallery li{float:left; margin:0 10px 10px 0;}
 #gallery li.last{margin-right:0;}
+
+.image-box{
+    float: left;
+    margin-left:10px;
+}

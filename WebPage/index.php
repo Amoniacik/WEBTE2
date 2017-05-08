@@ -23,13 +23,13 @@ Licence URI: http://www.os-templates.com/template-terms
             //window.location = "http://m.domain.com";
 //            $("input[type=checkbox]:checked ~ #menu").css("display","block");
 //            $("input[type=checkbox]").css("display","none");
-            $(".first-level,.second-level,.third-level").css({"position":"static","display":"none","padding":"0px"});
-            $("li").css({"margin-bottom":"1px", "width":"100%"});
-            $(".first-level > li,.second-level> li,.third-level > li").css("width","100%");
-            $(".menu-item").css({"width":"100%","box-shadow":"none"});
-            $(".first-level li:hover > ul").css({"position":"relative","display":"block","z-index":"9999","width":"inherit"});
-            $(".second-level li:hover > ul").css({"display":"block","z-index":"9999","position":"relative"});
-            $(".show-menu").css("display", "block");
+//            $(".first-level,.second-level,.third-level").css({"position":"static","display":"none","padding":"0px"});
+//            $("li").css({"margin-bottom":"1px", "width":"100%"});
+//            $(".first-level > li,.second-level> li,.third-level > li").css("width","100%");
+//            $(".menu-item").css({"width":"100%","box-shadow":"none"});
+//            $(".first-level li:hover > ul").css({"position":"relative","display":"block","z-index":"9999","width":"inherit"});
+//            $(".second-level li:hover > ul").css({"display":"block","z-index":"9999","position":"relative"});
+//            $(".show-menu").css("display", "block");
         }
     });
         //-->
