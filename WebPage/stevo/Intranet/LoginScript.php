@@ -58,6 +58,8 @@ if ($connect = @ldap_connect($ldap_server)) { // if connected to ldap server
     // Set variables in session
     $_SESSION["username"] = $username;
     $_SESSION["password"] = $password;
+    $_SESSION["role"] = 5; //admin role is logged by default
+
 
     //redirect to intranet welcome Page
     header('Location: Intranet.php');
