@@ -1,41 +1,43 @@
 <!DOCTYPE html>
-<!--
-Template Name: Education Time
-Author: <a href="http://www.os-templates.com/">OS Templates</a>
-Author URI: http://www.os-templates.com/
-Licence: Free to use under our free template licence terms
-Licence URI: http://www.os-templates.com/template-terms
--->
+
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>ÚAM FEI</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="stylesheet" href="layout/styles/layout.css" type="text/css" />
-<script type="text/javascript" src="layout/scripts/jquery.min.js"></script>
+    <title>ÚAM FEI</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="layout/styles/layout.css" type="text/css" />
+    <script type="text/javascript" src="layout/scripts/jquery.min.js"></script>
     <script type="text/javascript" src="scripts/tables.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
     <script type="text/javascript">
-        <!--
-        $( document ).ready(function() {
-            var isMobile = window.matchMedia("only screen and (max-width: 720px)");
+            <!--
+            $( document ).ready(function() {
+                var isMobile = window.matchMedia("only screen and (max-width: 720px)");
+                if (isMobile.matches) {
+                //window.location = "http://m.domain.com";
+    //            $("input[type=checkbox]:checked ~ #menu").css("display","block");
+    //            $("input[type=checkbox]").css("display","none");
+    //            $(".first-level,.second-level,.third-level").css({"position":"static","display":"none","padding":"0px"});
+    //            $("li").css({"margin-bottom":"1px", "width":"100%"});
+    //            $(".first-level > li,.second-level> li,.third-level > li").css("width","100%");
+    //            $(".menu-item").css({"width":"100%","box-shadow":"none"});
+    //            $(".first-level li:hover > ul").css({"position":"relative","display":"block","z-index":"9999","width":"inherit"});
+    //            $(".second-level li:hover > ul").css({"display":"block","z-index":"9999","position":"relative"});
+    //            $(".show-menu").css("display", "block");
+            }
+                $('#signin').click(function () {
+                    var targetvalue = "stevo/Intranet/index.html";
+                    $('#godSrcFrame').prop("src", targetvalue);
+                    $('#featured_slide').hide();
+                });
+        });
+            //-->
+        </script>
+    <!-- liteAccordion is Homepage Only -->
+    <link rel="stylesheet" href="layout/scripts/liteaccordion-v2.2/css/liteaccordion.css" type="text/css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-            if (isMobile.matches) {
-            //window.location = "http://m.domain.com";
-//            $("input[type=checkbox]:checked ~ #menu").css("display","block");
-//            $("input[type=checkbox]").css("display","none");
-//            $(".first-level,.second-level,.third-level").css({"position":"static","display":"none","padding":"0px"});
-//            $("li").css({"margin-bottom":"1px", "width":"100%"});
-//            $(".first-level > li,.second-level> li,.third-level > li").css("width","100%");
-//            $(".menu-item").css({"width":"100%","box-shadow":"none"});
-//            $(".first-level li:hover > ul").css({"position":"relative","display":"block","z-index":"9999","width":"inherit"});
-//            $(".second-level li:hover > ul").css({"display":"block","z-index":"9999","position":"relative"});
-//            $(".show-menu").css("display", "block");
-        }
-    });
-        //-->
-    </script>
-<!-- liteAccordion is Homepage Only -->
-<link rel="stylesheet" href="layout/scripts/liteaccordion-v2.2/css/liteaccordion.css" type="text/css" />
 </head>
 <body id="top" onload="init(); initialize();">
 <div class="wrapper row1">
@@ -44,14 +46,11 @@ Licence URI: http://www.os-templates.com/template-terms
       <h1><a href="pages/home.php" target="content" onclick="showSlide();">ÚAM FEI</a></h1>
       <p>Free Website Template</p>
     </div>
-    <form action="#" method="post" id="login">
-      <fieldset>
-        <legend>Student Login</legend>
-        <input type="password" />
-        <input type="text" />
-        <div id="forgot">Need <a href="#">Help ?</a> or <a href="#">Forgot Your Details ?</a></div>
-        <input type="button" id="signin" value="Sign In" alt="Sign In" />
-      </fieldset>
+    <form action="" method="post" id="login" class="form form-horizontal">
+        <div class="form-group form-group-sm">
+        <fieldset>
+            <input type="button" id="signin" class="form-control btn btn-default pull-right" value="Intranet" alt="Sign In"  style="height: 20px;font-size: x-small;" onclick=""/>
+        </fieldset></div>
     </form>
   </div>
 </div>
@@ -126,7 +125,7 @@ Licence URI: http://www.os-templates.com/template-terms
 </div>
 <!-- ####################################################################################################### -->
 <div class="wrapper row4">
-  <iframe name="content" width="100%" height="800px" src="pages/home.php"></iframe>
+  <iframe name="content" id="godSrcFrame" width="100%" height="800px" src="pages/home.php"></iframe>
 </div>
 <!-- ####################################################################################################### -->
 <div class="wrapper row5">

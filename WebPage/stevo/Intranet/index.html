@@ -2,20 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Logginin button to intranet</title>
+    <title>Gateway</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
+<br><br><br>
+<div class="container">
+<div class="row row-centered">
+    <div class="col-sm-4 col-sm-offset-4">
 
-    <form class="form-inline" action="LoginScript.php" method="post">
-        <input type="text" name="stuLogin" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="stu username">
-        <input type="password"  name="stuPassword" class="form-control" id="inlineFormInputGroup" placeholder="stu password">
-        <button type="submit" class="btn btn-primary">Log me in</button>
-    </form>
+        <div class="panel panel-default">
+            <div class="panel-header"></div>
+            <div class="panel-body">
+                <form class="form form-horizontal" action="LoginScript.php" method="post">
+                    <input type="text" name="stuLogin" class="form-control mb-2 mr-sm-2 mb-sm-0 input-sm" id="inlineFormInput" placeholder="stu username" style="height: 25px;font-size: smaller;">
+                    <input type="password"  name="stuPassword" class="form-control input-sm" id="inlineFormInputGroup" placeholder="stu password" style="height: 25px;font-size: smaller;">
 
+                        <br>
+                        <div class="form-inline">
+                            <input type="submit" class="form-control input-sm btn btn-primary" value="Log me in"  style="height: 30px;font-size: small;">
+                            <input type="submit" class="form-control input-sm btn btn-danger" value="Log out"  style="height: 30px;font-size: small;">
+                        </div>
+
+
+
+
+
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 
 </body>
 </html>
+
+
