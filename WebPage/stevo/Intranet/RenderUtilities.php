@@ -13,17 +13,17 @@ catch(PDOException $e){
 
 function renderIntranetPanel(){
 
-    return"
+    return"<br>
         <div class='container'>
         <ul class='nav nav-tabs navbar-default col-sm-10' style='left: 130px;'>
               <li ><button class='w3-button w3-white w3-large' onclick='w3_open()'>&#9776;</button></li>
-              <li><a href='/final/intranet/pedagogika.php'>Pedagogika</a></li>
-              <li><a href='/final/intranet/doktorandi.php'>Doktorandi</a></li>
-              <li><a href='/final/intranet/publikacie.php'>Publikácie</a></li>
-              <li><a href='/final/intranet/sluzobne-cesty.php'>Služobné cesty</a></li>
-              <li><a href='/final/intranet/nakupy.php'>Nákupy</a></li>
-              <li><a href='/final/intranet/dochadzka.php'>Dochádzka</a></li>
-              <li><a href='/final/intranet/rozdelenie-uloh.php'>Rozdelenie úloh</a></li>
+              <li><a href='/testovaciFile/stevo/Intranet/intranet/pedagogika.php'>Pedagogika</a></li>
+              <li><a href='/testovaciFile/stevo/Intranet/intranet/doktorandi.php'>Doktorandi</a></li>
+              <li><a href='/testovaciFile/stevo/Intranet/intranet/publikacie.php'>Publikácie</a></li>
+              <li><a href='/testovaciFile/stevo/Intranet/intranet/sluzobne-cesty.php'>Služobné cesty</a></li>
+              <li><a href='/testovaciFile/stevo/Intranet/intranet/nakupy.php'>Nákupy</a></li>
+              <li><a href='/testovaciFile/stevo/Intranet/intranet/dochadzka.php'>Dochádzka</a></li>
+              <li><a href='/testovaciFile/stevo/Intranet/intranet/rozdelenie-uloh.php'>Rozdelenie úloh</a></li>
             </ul>
         </div>";
 }
@@ -33,23 +33,6 @@ function urlSwitchRouter(){
     return $urlParts[sizeof($urlParts)-1];
 }
 
-function renderIntranetPage($nameOfPage){
-
-    switch ($nameOfPage) {
-
-
-        case "dochadzka.php":
-            echo "luboveVeci";
-            renderSidebarPanel();
-        break;
-        case "rozdelenie-uloh.php":
-            echo "tabulka-rozdelenieUloh";
-        break;
-        default:
-            echo "<br>";
-    }
-
-}
 
 class CategoryAndCount{
     public $category;
@@ -62,7 +45,7 @@ function retreiveDocForCategory($category){
     $sidebarPanelParts = renderSidebarPanel();
     echo $sidebarPanelParts[0];
 
-    echo "<div class='container' >
+    echo "<br><div class='container' >
             <div class='row row-centered'>
                 <div class='col-sm-10 col-sm-offset-1'>
                 

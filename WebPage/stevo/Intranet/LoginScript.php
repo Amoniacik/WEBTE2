@@ -3,7 +3,6 @@
  * If valid credentials are provided via POST,username and password are set up into Session
  *
  */
-
 session_start(); // should be on top of page due to logging and security reasons
 $login = $_POST["stuLogin"];
 $password = $_POST["stuPassword"];

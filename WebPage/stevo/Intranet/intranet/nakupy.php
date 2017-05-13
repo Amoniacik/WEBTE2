@@ -6,6 +6,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src='https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=u0xubz8k7kfuhcb83vi2fxeckrfnpaa6yqvir2xl08vjfp30'></script>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="css/bootstrap-theme.css" type="text/css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script>
         tinymce.init({
@@ -25,14 +28,9 @@ session_start();
 if (isset($_SESSION["username"]) &&  isset($_SESSION["password"]) )
 {
     //render intranet menu
-    echo renderIntranetPanel();
+    echo renderIntranetPanel(); $sidebar = renderSidebarPanel();echo $sidebar[0]; echo $sidebar[1];
 
-    // router to render related sub-page,returns name of that page
-    $page = urlSwitchRouter();
-    renderIntranetPage($page);
-    $sidebar = renderSidebarPanel();echo $sidebar[0]; echo $sidebar[1];
-
-    echo "<div class='container'>
+    echo "<br><div class='container'>
             <div class='row row-centered'>
                 <div class='col-sm-10 col-sm-offset-1'>
                     <div class='panel panel-default'>

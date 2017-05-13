@@ -26,9 +26,9 @@
     //            $(".show-menu").css("display", "block");
             }
                 $('#signin').click(function () {
-                    var targetvalue = "stevo/Intranet/index.html";
-                    $('#godSrcFrame').prop("src", targetvalue);
+                    var targetvalue = "stevo/Intranet/index.php";
                     $('#featured_slide').hide();
+                    $('#godSrcFrame').prop("src", targetvalue);
                 });
         });
             //-->
@@ -48,9 +48,8 @@
     </div>
     <form action="" method="post" id="login" class="form form-horizontal">
         <div class="form-group form-group-sm">
-        <fieldset>
-            <input type="button" id="signin" class="form-control btn btn-default pull-right" value="Intranet" alt="Sign In"  style="height: 20px;font-size: x-small;" onclick=""/>
-        </fieldset></div>
+            <input type="button" id="signin" class="btn btn-danger" value="Intranet" style="height: 20px;font-size: x-small;position: fixed;left: 81%;" >
+        </div>
     </form>
   </div>
 </div>
